@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="@string/options_title"
+        android:id="@+id/optionsTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="@dimen/options_title_size"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageView5"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:src="@mipmap/ic_arrow_back_black_48dp"
+        android:layout_above="@+id/linearLayout"
+        android:layout_marginLeft="16dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/optionsTitle"
+        android:layout_centerHorizontal="true"
+        android:weightSum="1"
+        android:id="@+id/linearLayout"
+        android:layout_marginTop="50sp">
+
+        <ImageView
+            android:layout_width="221dp"
+            android:layout_height="0dp"
+            android:id="@+id/imageView"
+            android:src="@drawable/sound1"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="100sp"
+            android:layout_weight="0.21"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="221dp"
+            android:layout_height="0dp"
+            android:id="@+id/imageView3"
+            android:src="@drawable/player1"
+            android:layout_gravity="center"
+            android:layout_weight="0.21"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:scaleType="fitXY" />
+
+        <ImageView
+            android:layout_width="221dp"
+            android:layout_height="0dp"
+            android:id="@+id/imageView4"
+            android:src="@drawable/about1"
+            android:layout_gravity="center_horizontal"
+            android:layout_weight="0.21"
+            android:clickable="true"
+            android:focusableInTouchMode="true"
+            android:focusable="true"
+            android:scaleType="fitXY" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -58,15 +58,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/knightImg"
-            android:src="@drawable/knight"
+            android:src="@drawable/knight_without_back"
             android:layout_alignParentBottom="false"
-
             android:layout_alignParentLeft="true"
             android:scaleType="fitStart" />
     </LinearLayout>
 
     <LinearLayout
-        android:orientation="vertical"
+        android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="fill_parent"
         android:id="@+id/dragonLayout"
@@ -80,6 +79,7 @@
             android:layout_alignBottom="@+id/knightImg"
             android:layout_alignLeft="@+id/btnLayout"
             android:layout_alignStart="@+id/btnLayout"
-            android:src="@drawable/dragon" />
+            android:src="@drawable/dragon_without_back" />
     </LinearLayout>
+
 </RelativeLayout>

@@ -1,9 +1,12 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools" android:layout_width="fill_parent"
-    android:layout_height="fill_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity"
+    android:background="#a0efefef">
 
     <LinearLayout
         android:orientation="vertical"
@@ -13,37 +16,39 @@
         android:layout_centerVertical="true"
         android:id="@+id/btnLayout">
 
-        <ImageButton
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnNewGame"
             android:layout_centerVertical="true"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/new_game1" />
+            android:src="@drawable/new_game" />
 
-        <ImageButton
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnOpions"
             android:layout_below="@+id/btnNewGame"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/opt1"/>
+            android:src="@drawable/options"
+            android:onClick="onOptions" />
 
-        <ImageButton
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnStatistic"
             android:layout_below="@+id/btnOpions"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/stat1"/>
+            android:src="@drawable/stat"/>
 
-        <ImageButton
+        <ImageView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/btnExit"
             android:layout_below="@+id/btnStatistic"
             android:layout_centerHorizontal="true"
-            android:src="@drawable/exit1"/>
+            android:src="@drawable/exit"
+            android:onClick="onExit" />
     </LinearLayout>
 
     <LinearLayout

@@ -1,24 +1,27 @@
-package com.malinin.dmitriy.android.dragonslayer;
+package com.malinin.dmitriy.android.dragonslayer.activities;
 
+import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.malinin.dmitriy.android.dragonslayer.R;
 
-public class MainActivity extends ActionBarActivity {
+public class AboutActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_about);
     }
-
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_about, menu);
         return true;
     }
 
@@ -36,4 +39,11 @@ public class MainActivity extends ActionBarActivity {
 
         return super.onOptionsItemSelected(item);
     }
+
+    public void onBackOpt(View view)
+    {
+        Intent intent = new Intent(this, OptionsActivity.class);
+        startActivity(intent);
+    }
+
 }

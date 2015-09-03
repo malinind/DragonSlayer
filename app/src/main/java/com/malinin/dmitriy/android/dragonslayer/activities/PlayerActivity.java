@@ -1,11 +1,13 @@
 package com.malinin.dmitriy.android.dragonslayer.activities;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.malinin.dmitriy.android.dragonslayer.R;
 
@@ -42,5 +44,17 @@ public class PlayerActivity extends Activity {
     public void backToMenu(View view)
     {
         onBackPressed();
+    }
+
+    public void onCreatePlayer(View view)
+    {
+        Intent intent = new Intent(this,CreatePlayer.class);
+        startActivity(intent);
+    }
+
+    public void onDevelopPlay(View view)
+    {
+        Toast.makeText(getApplicationContext(), "Этот раздел еще в разработке. Извините за временные неудобства", Toast.LENGTH_SHORT).show();
+
     }
 }

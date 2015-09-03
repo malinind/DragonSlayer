@@ -19,7 +19,8 @@
         </activity>
         <activity
             android:name=".activities.OptionsActivity"
-            android:screenOrientation="sensorLandscape" >
+            android:screenOrientation="sensorLandscape"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
         </activity>
         <activity
             android:name=".activities.AboutActivity"
@@ -29,12 +30,14 @@
         </activity>
         <activity
             android:name=".activities.PlayerActivity"
-            android:label="@string/title_activity_player" >
+            android:label="@string/title_activity_player"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
         </activity>
         <activity
             android:name=".activities.CreatePlayer"
             android:label="@string/title_activity_create_player"
-            android:parentActivityName=".activities.OptionsActivity" >
+            android:parentActivityName=".activities.OptionsActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen">
         </activity>
     </application>
 

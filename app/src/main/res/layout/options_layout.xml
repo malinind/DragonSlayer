@@ -9,12 +9,13 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/options_title"
-        android:id="@+id/optionsTitle"
+        android:id="@+id/createTitle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textSize="@dimen/options_title_size"
         android:textStyle="bold"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -31,10 +32,11 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/optionsTitle"
+        android:layout_below="@+id/createTitle"
         android:layout_centerHorizontal="true"
         android:weightSum="1"
-        android:id="@+id/linearLayout">
+        android:id="@+id/linearLayout"
+        android:onClick="onDevelopOpt">
 
         <ImageView
             android:layout_width="wrap_content"
@@ -49,7 +51,8 @@
             android:layout_alignParentLeft="false"
             android:layout_alignParentTop="false"
             android:layout_centerHorizontal="true"
-            android:layout_above="@+id/imgPlayer"/>
+            android:layout_above="@+id/imgPlayer"
+            android:onClick="onDevelopOpt" />
 
         <ImageView
             android:layout_width="wrap_content"

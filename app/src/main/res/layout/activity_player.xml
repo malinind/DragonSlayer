@@ -9,12 +9,13 @@
         android:layout_height="wrap_content"
         android:textAppearance="?android:attr/textAppearanceLarge"
         android:text="@string/title_activity_player"
-        android:id="@+id/optionsTitle"
+        android:id="@+id/createTitle"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:textSize="@dimen/options_title_size"
         android:textStyle="bold"
-        android:layout_marginTop="16dp" />
+        android:layout_marginTop="16dp"
+        android:textColor="@android:color/black" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -31,7 +32,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@+id/optionsTitle"
+        android:layout_below="@+id/createTitle"
         android:layout_centerHorizontal="true"
         android:weightSum="1"
         android:id="@+id/linearLayout">
@@ -49,7 +50,8 @@
             android:layout_alignParentLeft="false"
             android:layout_alignParentTop="false"
             android:layout_centerHorizontal="true"
-            android:layout_above="@+id/btnLoad"/>
+            android:layout_above="@+id/btnLoad"
+            android:onClick="onCreatePlayer" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -61,7 +63,8 @@
             android:focusableInTouchMode="false"
             android:focusable="false"
             android:scaleType="fitXY"
-            android:layout_centerInParent="true" />
+            android:layout_centerInParent="true"
+            android:onClick="onDevelopPlay" />
 
         <ImageView
             android:layout_width="wrap_content"
@@ -75,7 +78,8 @@
             android:scaleType="fitXY"
             android:layout_centerHorizontal="true"
             android:layout_alignParentBottom="false"
-            android:layout_below="@+id/btnLoad" />
+            android:layout_below="@+id/btnLoad"
+            android:onClick="onDevelopPlay" />
     </RelativeLayout>
 
 </RelativeLayout>

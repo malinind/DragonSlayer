@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Toast;
 
 import com.malinin.dmitriy.android.dragonslayer.R;
 
@@ -18,7 +19,7 @@ public class OptionsActivity extends Activity{
         setContentView(R.layout.options_layout);
     }
 
-    // TODO: 01.09.2015 разобраться с intent (плодятся куча actvities), нужно чтобы при переходе на следующее предыдущее закрывалось
+
     public void onBack(View view)
     {
         onBackPressed();
@@ -34,5 +35,11 @@ public class OptionsActivity extends Activity{
     {
         Intent intent = new Intent(this,PlayerActivity.class);
         startActivity(intent);
+    }
+
+    public void onDevelopOpt(View view)
+    {
+        Toast.makeText(getApplicationContext(), "Этот раздел еще в разработке. Извините за временные неудобства", Toast.LENGTH_SHORT).show();
+
     }
 }

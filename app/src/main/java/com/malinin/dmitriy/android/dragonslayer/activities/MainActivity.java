@@ -10,6 +10,7 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
 import com.malinin.dmitriy.android.dragonslayer.R;
 
@@ -23,8 +24,6 @@ public class MainActivity extends Activity {
 
     }
 
-
-    //todo 01.09.2015 изменить код на вызов onExit
     @Override
 
     public void onBackPressed() {
@@ -85,6 +84,12 @@ public class MainActivity extends Activity {
 
         AlertDialog dialog = builder.create();
         dialog.show();
+
+    }
+
+    public void onDevelop(View view)
+    {
+        Toast.makeText(getApplicationContext(),"Этот раздел еще в разработке. Извините за временные неудобства",Toast.LENGTH_SHORT).show();
 
     }
 

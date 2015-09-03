@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Toast;
 
 import com.malinin.dmitriy.android.dragonslayer.R;
 
@@ -42,5 +43,11 @@ public class CreatePlayer extends Activity {
     public void onBack(View view)
     {
         onBackPressed();
+    }
+
+    public void onDevelopSave(View view)
+    {
+        Toast.makeText(getApplicationContext(), "Этот раздел еще в разработке. Извините за временные неудобства", Toast.LENGTH_SHORT).show();
+
     }
 }

@@ -1,7 +1,6 @@
 package com.malinin.dmitriy.android.dragonslayer.activities;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,18 +9,18 @@ import android.view.View;
 
 import com.malinin.dmitriy.android.dragonslayer.R;
 
-public class AboutActivity extends Activity {
+public class CreatePlayer extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+        setContentView(R.layout.activity_create_player);
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_about, menu);
+        getMenuInflater().inflate(R.menu.menu_create_player, menu);
         return true;
     }
 
@@ -40,11 +39,8 @@ public class AboutActivity extends Activity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void onBackOpt(View view)
+    public void onBack(View view)
     {
-        Intent intent = new Intent(this, OptionsActivity.class);
-        startActivity(intent);
-        finish();
+        onBackPressed();
     }
-
 }

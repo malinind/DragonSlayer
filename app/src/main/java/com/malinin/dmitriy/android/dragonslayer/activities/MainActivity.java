@@ -28,26 +28,9 @@ public class MainActivity extends Activity {
     @Override
 
     public void onBackPressed() {
-        AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this);
 
-        builder.setTitle("Выход")
-                .setMessage("Вы уверены что хотите выйти из приложения?")
-                .setCancelable(true)
-                .setPositiveButton("Да", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                        finish();
-                        System.exit(0);
-                    }
-                })
-                .setNegativeButton("Нет", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialog, int which) {
-                    }
-                });
-
-        AlertDialog dialog = builder.create();
-        dialog.show();
+        View view = getCurrentFocus();
+        onExit(view);
     }
 
 
@@ -77,7 +60,6 @@ public class MainActivity extends Activity {
     {
         Intent intent = new Intent(this, OptionsActivity.class);
         startActivity(intent);
-        finishActivity(0);
 
     }
 

@@ -9,5 +9,6 @@
     <string name="textAbout">Спасибо за то что пользуетесь данным продуктом</string>
     <string name="title_activity_player">Player menu</string>
     <string name="txtPlayerMenuTitle">Player Options</string>
+    <string name="title_activity_create_player">CreatePlayer</string>
 
 </resources>

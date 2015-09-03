@@ -26,7 +26,11 @@
             android:name=".activities.AboutActivity"
             android:label="@string/title_activity_about"
             android:screenOrientation="sensorLandscape"
-            android:theme="@style/Base.Theme.AppCompat.Dialog">
+            android:theme="@style/Base.Theme.AppCompat.Dialog" >
+        </activity>
+        <activity
+            android:name=".activities.PlayerActivity"
+            android:label="@string/title_activity_player" >
         </activity>
     </application>
 

@@ -1,10 +1,13 @@
 package com.malinin.dmitriy.android.dragonslayer.players;
 
+import java.io.Serializable;
+
 /**
  * Created by dmitriy on 29.03.2015.
  */
-public class Player {
+public class Player implements Serializable{
 
+    private String name;
     private int strength;
     private int dexterity;
     private int defense;
@@ -27,6 +30,14 @@ public class Player {
         this.defense=defense;
         this.health = health;
         this.lucky = lucky;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public int getStrength() {return strength;  }
